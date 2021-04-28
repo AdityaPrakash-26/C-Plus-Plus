@@ -1,0 +1,4 @@
+<map id="sorting::recursive_bubble_sort" name="sorting::recursive_bubble_sort">
+<area shape="rect" id="node1" title="This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t..." alt="" coords="5,5,128,47"/>
+<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf" title="This is a function for swapping two variables. Alternatively, &lt;algorithm&gt; could be included." alt="" coords="176,13,276,39"/>
+</map>

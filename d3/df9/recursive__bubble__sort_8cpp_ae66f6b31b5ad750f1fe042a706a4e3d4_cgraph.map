@@ -1,8 +1,4 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="145,5,217,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="104,56,259,83"/>
-<area shape="rect" id="node4" href="$d3/df9/recursive__bubble__sort_8cpp.html#a9a03ca903cbd98149a4b25510c80c282" title=" " alt="" coords="107,107,256,133"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="123,157,239,184"/>
-<area shape="rect" id="node5" href="$d3/df9/recursive__bubble__sort_8cpp.html#acd3415eef442ced2b5e064f95f04b624" title=" " alt="" coords="307,107,360,133"/>
+<area shape="rect" id="node1" title="main method to run the program" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node2" href="$d3/df9/recursive__bubble__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="function for testing the code" alt="" coords="104,5,148,32"/>
 </map>

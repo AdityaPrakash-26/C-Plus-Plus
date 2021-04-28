@@ -150,6 +150,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a9d4eb6ea3c35540d804d451f1716622d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf40e85adc86385c0bb767c6df130bf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaaf40e85adc86385c0bb767c6df130bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">swap</a> (T *x, T *y)</td></tr>
+<tr class="memdesc:aaaf40e85adc86385c0bb767c6df130bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a function for swapping two variables. Alternatively, &lt;algorithm&gt; could be included.  <a href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">More...</a><br /></td></tr>
+<tr class="separator:aaaf40e85adc86385c0bb767c6df130bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, int n)</td></tr>
+<tr class="memdesc:af67f9b920f3bab178bb89ea5c57e12eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">More...</a><br /></td></tr>
+<tr class="separator:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa">shell_sort</a> (T *arr, size_t LEN)</td></tr>
 <tr class="separator:a5669396c6a6b1e14b97589b6e37980aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -993,6 +1001,77 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="af67f9b920f3bab178bb89ea5c57e12eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67f9b920f3bab178bb89ea5c57e12eb">&#9670;&nbsp;</a></span>recursive_bubble_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::recursive_bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>nums</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data variables in the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nums</td><td>our array of elements. </td></tr>
+    <tr><td class="paramname">n</td><td>size of the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; base case; when size of the array is 1</p>
+<p>&lt; iterating over the entire array</p>
+<p>&lt; if a larger number appears before the smaller one, swap them.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                      {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">swap</a>(&amp;(*nums)[i], &amp;(*nums)[i + 1]);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="ttc" id="anamespacesorting_html_aaaf40e85adc86385c0bb767c6df130bf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">sorting::swap</a></div><div class="ttdeci">void swap(T *x, T *y)</div><div class="ttdoc">This is a function for swapping two variables. Alternatively, &lt;algorithm&gt; could be included.</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:70</div></div>
+<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:87</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af67f9b920f3bab178bb89ea5c57e12eb_cgraph.svg" width="282" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="af2c5b92cbfe73f63f6074c61b0a45331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c5b92cbfe73f63f6074c61b0a45331">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[1/3]</span></h2>
 
@@ -1150,6 +1229,57 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 
+</div>
+</div>
+<a id="aaaf40e85adc86385c0bb767c6df130bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf40e85adc86385c0bb767c6df130bf">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::swap </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is a function for swapping two variables. Alternatively, &lt;algorithm&gt; could be included. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data variables to be swapped </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>first variable to be swapped </td></tr>
+    <tr><td class="paramname">y</td><td>second variable to be swapped </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; dereferencing pointer to <code>x</code> and assigning it to <code>temp</code></p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                      {     </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    T temp = *x;  <span class="comment">//!&lt; dereferencing pointer to `x` and assigning it to `temp`</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    *x = *y;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    *y = temp;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
