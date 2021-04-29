@@ -123,19 +123,19 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"cpp/utility/move_if_noexcept.html",
-"d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8",
-"d4/def/kohonen__som__topology_8cpp.html#a6b5e744876fd980a3451cbb385d4e755",
-"d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15",
-"d8/d77/namespacemachine__learning.html#abf136b863d804899647f46eeb2e1392b",
-"d9/d49/structdata__structures_1_1_node.html",
-"da/da3/uint256__t_8hpp.html#a8922612404dc44b89fa98f36a847c52a",
-"cpp/io/manip/showpos.html",
-"d2/dc4/classstack__linked_list.html#a44c1c5a34c5fb553025a33abe4f2e819",
-"dc/dfe/ternary__search_8cpp.html#a23ad617bfce1e7cf4591059c85c1a027",
-"de/d75/qr__eigen__values_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
-"globals_func_m.html"
+"",
+"cpp/io/c/vfwprintf.html",
+"cpp/string/wide/iswlower.html",
+"d1/d83/classuint256__t.html#a4fdeb4d4bf8cca4ee99b8487e59831df",
+"d3/d22/saddleback__search_8cpp.html",
+"d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#a2272bb62c35af959953b0ea06b010036",
+"d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41",
+"d7/db9/hill__cipher_8cpp.html#a3147ad576f8a94a2a6b66948672b452b",
+"d9/d23/classgraph_1_1_lowest_common_ancestor.html#a60151e19512b48cc0b14ea121df00488",
+"da/d9a/class_graph.html#acfa457b5f6f7eb480fd469fb980a01ea",
+"db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5",
+"dd/da8/pigeonhole__sort_8cpp.html",
+"functions_func_k.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

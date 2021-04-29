@@ -171,6 +171,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
 <p>for io operations</p>
+<p>for IO operations</p>
 <p>Sorting Algorithms.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for assert for typedef datatype uint64_t for IO operations</p>
@@ -179,6 +180,8 @@ Functions</h2></td></tr>
 <p>Sorting algorithms</p>
 <p>Sorting algorithms</p>
 <p>header files for collection of functions for a macro called assert which can be used to verify assumptions for io operations</p>
+<p>Sorting algorithms</p>
+<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></p>
 <p>Sorting algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a70a6a99d554280c326f80355c4d2c494"></a>
@@ -1046,23 +1049,23 @@ template&lt;typename T &gt; </div>
 <p>&lt; base case; when size of the array is 1</p>
 <p>&lt; iterating over the entire array</p>
 <p>&lt; if a larger number appears before the smaller one, swap them.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                      {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">swap</a>(&amp;(*nums)[i], &amp;(*nums)[i + 1]);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="ttc" id="anamespacesorting_html_aaaf40e85adc86385c0bb767c6df130bf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">sorting::swap</a></div><div class="ttdeci">void swap(T *x, T *y)</div><div class="ttdoc">This is a function for swapping two variables. Alternatively, the &lt;algorithm&gt;'s swap function could b...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:71</div></div>
-<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:88</div></div>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                      {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">swap</a>(&amp;(*nums)[i], &amp;(*nums)[i + 1]);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="ttc" id="anamespacesorting_html_aaaf40e85adc86385c0bb767c6df130bf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf">sorting::swap</a></div><div class="ttdeci">void swap(T *x, T *y)</div><div class="ttdoc">This is a function for swapping two variables. Alternatively, the &lt;algorithm&gt;'s swap function could b...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:69</div></div>
+<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:86</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1274,11 +1277,11 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <p>&lt; dereferencing pointer to <code>x</code> and assigning it to <code>temp</code></p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                      {     </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    T temp = *x;  <span class="comment">//!&lt; dereferencing pointer to `x` and assigning it to `temp`</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    *x = *y;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    *y = temp;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                      {     </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    T temp = *x;  <span class="comment">//!&lt; dereferencing pointer to `x` and assigning it to `temp`</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    *x = *y;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    *y = temp;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
