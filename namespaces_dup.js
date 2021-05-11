@@ -148,8 +148,7 @@ var namespaces_dup =
       [ "shell_sort", "d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331", null ],
       [ "shell_sort", "d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa", null ],
       [ "shell_sort", "d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924", null ],
-      [ "shuffle", "d5/d91/namespacesorting.html#aedfb88e2d6fff1871f038221fe5870fe", null ],
-      [ "swap", "d5/d91/namespacesorting.html#aaaf40e85adc86385c0bb767c6df130bf", null ]
+      [ "shuffle", "d5/d91/namespacesorting.html#aedfb88e2d6fff1871f038221fe5870fe", null ]
     ] ],
     [ "sparse_table", "d9/d55/namespacesparse__table.html", null ],
     [ "spirograph", "da/dd3/namespacespirograph.html", [
