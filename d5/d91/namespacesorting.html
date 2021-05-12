@@ -1045,22 +1045,22 @@ template&lt;typename T &gt; </div>
 <p>&lt; base case; when size of the array is 1</p>
 <p>&lt; iterating over the entire array</p>
 <p>&lt; if a larger number appears before the smaller one, swap them.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                      {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*nums)[i], (*nums)[i + 1]);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:71</div></div>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                      {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*nums)[i], (*nums)[i + 1]);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:73</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
