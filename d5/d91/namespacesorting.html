@@ -150,10 +150,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a9d4eb6ea3c35540d804d451f1716622d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, int n)</td></tr>
-<tr class="memdesc:af67f9b920f3bab178bb89ea5c57e12eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">More...</a><br /></td></tr>
-<tr class="separator:af67f9b920f3bab178bb89ea5c57e12eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, uint64_t n)</td></tr>
+<tr class="memdesc:ae3a775d99dbbb94c130a973df0cfddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">More...</a><br /></td></tr>
+<tr class="separator:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa">shell_sort</a> (T *arr, size_t LEN)</td></tr>
 <tr class="separator:a5669396c6a6b1e14b97589b6e37980aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1000,8 +1000,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="af67f9b920f3bab178bb89ea5c57e12eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af67f9b920f3bab178bb89ea5c57e12eb">&#9670;&nbsp;</a></span>recursive_bubble_sort()</h2>
+<a id="ae3a775d99dbbb94c130a973df0cfddcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a775d99dbbb94c130a973df0cfddcf">&#9670;&nbsp;</a></span>recursive_bubble_sort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1017,7 +1017,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -1045,26 +1045,26 @@ template&lt;typename T &gt; </div>
 <p>&lt; base case; when size of the array is 1</p>
 <p>&lt; iterating over the entire array</p>
 <p>&lt; if a larger number appears before the smaller one, swap them.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                      {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*nums)[i], (*nums)[i + 1]);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">recursive_bubble_sort</a>(nums, n - 1);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="ttc" id="anamespacesorting_html_af67f9b920f3bab178bb89ea5c57e12eb"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af67f9b920f3bab178bb89ea5c57e12eb">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, int n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:73</div></div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                           {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*nums)[i], (*nums)[i + 1]);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:74</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af67f9b920f3bab178bb89ea5c57e12eb_cgraph.svg" width="260" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_ae3a775d99dbbb94c130a973df0cfddcf_cgraph.svg" width="260" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
